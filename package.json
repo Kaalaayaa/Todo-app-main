@@ -4,13 +4,15 @@
   "description": "![Design preview for the Todo app coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "start": "react-scripts start"
+    "start": "react-scripts start",
+    "build": "react-scripts build"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
     "react-scripts": "^4.0.3"
   },
   "browserslist": {
@@ -24,5 +26,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "url-loader": "^4.1.1"
   }
 }

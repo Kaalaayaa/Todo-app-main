@@ -1,0 +1,110 @@
+
+.body {
+    height: 100%;
+    margin: 0;
+    position: relative;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+}
+
+.backgroundImage {
+    margin: 0;
+    background-image: url("./images/bg-desktop-light.jpg");
+    height: 35vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.todoAppWrapper {
+    width: 500px;
+    height: 800px;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left:50%;
+    margin-left:-250px;
+    margin-top: 70px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    color: white;
+    font-size: 2.5em; 
+    letter-spacing: 10px;
+}
+.moon {
+    font-size: 1.5em;
+    color: white;
+    padding-top: 26px;
+}
+
+.createTodo {
+    font-family: 'Josefin Sans', sans-serif;
+    width: 92%;
+    font-size: 18px;
+    height: 60px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    padding-left: 40px;
+
+}
+
+.todoApp {
+    margin-top: 30px
+}
+
+ul {
+    color: hsl(235, 19%, 35%);
+    padding: 0;
+    background-color: white;
+    border-radius: 8px;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 10px 40px 0px;
+}
+
+li {
+    padding: 20px;
+    list-style: none;
+    border-bottom: 1px solid lightgray;
+}
+
+.roundCheckBox {
+    margin-left: 15px;
+    margin-right: 40px;
+}
+
+
+.statusBar {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 13px;
+    color: hsl(236, 9%, 61%);
+}
+
+.status:hover {
+    color: blue;
+    font-weight: bold;
+
+}
+
+
+.bottomText {
+    margin-top: 50px;
+    text-align: center;
+    color: hsl(236, 9%, 61%);
+    font-size: 13px;
+}
+
