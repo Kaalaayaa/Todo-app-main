@@ -1,5 +1,7 @@
 import { useTodosContext } from "../contexts/TodosContext"
 import React, { useState} from 'react'
+import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
+
 
 
 function TodoListItem(){
@@ -8,7 +10,7 @@ function TodoListItem(){
     function toggleComplete(id) {
     let updatedTodos = [...todos].map((todo) => {
       if (todo.id === id) {
-        todo.completed = !todo.completed;
+        todo.done = !todo.done;
       }
       return todo;
     });
@@ -18,15 +20,19 @@ function TodoListItem(){
 
     return(
         <div>
-            {todos.map(todo =>
-                <li>
+            {todos.filter(item => item.display).map((todo, index) =>
+            <Draggable key={todo.id} draggableId={todo.text} index={index}>
+              {(provided) => (
+                <li ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps} className={todo.done ? "todoListItem-done" : ""}>
                     <input 
                         type="checkbox"
                         checked={todo.done} 
                         className="roundCheckBox"
                         onChange={() => toggleComplete(todo.id)}
-                    /><p>{todo.text}</p>
-                </li>)}
+                    /><p className="list-text">{todo.text}</p>
+                </li>
+              )}
+            </Draggable>)}
         </div>
     )
 }

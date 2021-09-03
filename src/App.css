@@ -64,14 +64,11 @@ ul {
     padding: 0;
     background-color: white;
     border-radius: 8px;
-    border-left: 1px solid lightgray;
-    border-right: 1px solid lightgray;
-    border-top: 1px solid lightgray;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 10px 40px 0px;
 }
 
 li {
-    padding: 20px;
+    padding: 10px;
     list-style: none;
     border-bottom: 1px solid lightgray;
 }
@@ -79,6 +76,7 @@ li {
 .roundCheckBox {
     margin-left: 15px;
     margin-right: 40px;
+    display: inline-block;
 }
 
 
@@ -91,8 +89,7 @@ li {
     padding-top: 8px;
     padding-bottom: 8px;
     font-size: 13px;
-    color: hsl(236, 9%, 61%);
-}
+    color: hsl(236, 9%, 61%);}
 
 .status:hover {
     color: blue;
@@ -108,3 +105,48 @@ li {
     font-size: 13px;
 }
 
+
+.todoListItem-done .list-text{
+    color: hsl(236, 9%, 61%);
+    text-decoration: line-through;
+}
+
+.dark .moon {
+    display: none;
+}
+
+.light .sun{
+    display: none;
+}
+
+.dark .backgroundImage {
+    background-image: url("./images/bg-desktop-dark.jpg");
+}
+
+.dark ul {
+    color: white;
+    padding: 0;
+    background-color: hsl(237, 14%, 26%);
+    box-shadow: black 0px 10px 40px 0px;
+}
+
+.dark .createTodo {
+    background-color:hsl(237, 14%, 26%);
+    color: white;
+
+}
+
+.dark .emptyBackground {
+    background-color: hsl(235, 24%, 19%);
+    height: 100vh;
+}
+
+.list-text {
+    display: inline-block;
+}
+
+.sun {
+    font-size: 1.5em;
+    color: white;
+    padding-top: 26px;
+}

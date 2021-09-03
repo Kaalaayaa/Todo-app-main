@@ -4,9 +4,9 @@ export const TodosContext = React.createContext()
 
 export function TodosContextProvider(props) {
     const [todos, setTodos] = useState([
-    { id: 58477, text: "Wash dishes", done: false },
-    { id: 64851, text: "Bake a cake", done: true },
-    { id: 59858, text: "Make a website", done: true },
+    { id: 58477, text: "Wash dishes", done: false, display: true},
+    { id: 64851, text: "Bake a cake", done: true, display:true },
+    { id: 59858, text: "Make a website", done: true, display: true },
 ])
 
     return (

@@ -9,7 +9,7 @@ function CreateTodo(){
     function createTodoItem(e) {
         const id = Math.floor(Math.random() * 99)
 
-        setTodos([...todos, {id, text:todo, done: false}])
+        setTodos([...todos, {id, text:todo, done: false, display: true}])
     }
 
     function handleChange(event){
