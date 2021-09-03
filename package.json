@@ -1,9 +1,12 @@
 {
   "name": "todo-app-main",
+  "homepage": "https://kaalaayaa.github.io/todo-app-main",
   "version": "1.0.0",
   "description": "![Design preview for the Todo app coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build"
   },
@@ -29,6 +32,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "url-loader": "^4.1.1"
   }
 }
