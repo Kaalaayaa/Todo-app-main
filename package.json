@@ -1,6 +1,6 @@
 {
   "name": "todo-app-main",
-  "homepage": "https://kaalaayaa.github.io/todo-app-main",
+  "homepage": ".",
   "version": "1.0.0",
   "description": "![Design preview for the Todo app coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",

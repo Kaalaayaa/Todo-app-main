@@ -10,6 +10,7 @@ function CreateTodo(){
         const id = Math.floor(Math.random() * 99)
 
         setTodos([...todos, {id, text:todo, done: false, display: true}])
+        setTodo("")
     }
 
     function handleChange(event){
